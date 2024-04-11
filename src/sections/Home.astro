@@ -15,10 +15,15 @@ import Boton from '../components/Boton.astro'
         </div>
     </div>
 </section> -->
-<section class="w-full h-screen flex justify-center items-center">
+<section class="w-full h-screen flex flex-col justify-center items-center md:items-start gap-4 text-white font-bold ">
     <Image src={Hero} alt='Security guard looking at a screen' class='w-full h-full object-cover absolute -z-20'/>
-<div class="text-white font-bold">
-    <h1 class="text-4xl">Los experos <br> para tu seguridad</h1>
-    <h2 class="text-lg">Conoce nuestros servicios mas populares</h2>
+<div class="px-5 md:px-[10rem] pt-10">
+    <h1 class="text-4xl lg:text-6xl">Los expertos <br> para tu seguridad</h1>
+</div>
+<div class="px-5 md:px-[10rem]">
+    <h2 class="text-lg lg:text-2xl">Conoce nuestros servicios mas populares</h2>
+</div>
+<div class="px-5 md:px-[10rem]">
+    <Boton text="Servicios"/>
 </div>
 </section>
