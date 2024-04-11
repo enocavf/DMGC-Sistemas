@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets"
+import Logo from "../images/logo.avif"
+---
+
+<section class="lg:flex md:justify-between text-white font-bold text-3xl bg-transparent top-0 w-full fixed py-5 z-40 px-10 items-center">
+<div class="flex justify-center">
+    <Image src={Logo} alt='Logo DMGC' class="max-w-[186px] max-h-[61px] sm:max-w-[266px] sm:max-h-[88px]"/>
+</div>
+<nav class="invisible md:visible flex align-center gap-5 md:justify-between">
+    <a href="">Nosotros</a>
+    <a href="">Servicios</a>
+    <a href="">Productos</a>
+    <a href="">Contacto</a>
+</nav>
+</section>

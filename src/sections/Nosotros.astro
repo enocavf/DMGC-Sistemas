@@ -1,0 +1,23 @@
+---
+import Boton from '../components/Boton.astro'
+import { Image } from 'astro:assets'
+import AboutUs from '../images/aboutus.avif'
+---
+
+<section class="flex bg-[#08121A] xl:bg-[#000912] xl:max-h-[680px] p-10 lg:px-[15rem]">
+    <article class="flex xl:bg-[#08121A] flex-col xl:flex-row items-center text-center xl:text-start gap-4  p-2 xl:p-10">
+        <div class="text-white">
+            <h1 class="text-2xl underline font-bold pb-4">SOBRE NOSOTROS</h1>
+            <p class="text-lg xl:pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quis atque placeat quidem, exercitationem vel dignissimos totam fugit suscipit, numquam esse veritatis similique reiciendis. Quaerat nesciunt sequi cupiditate ex blanditiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda totam enim debitis ipsa voluptate commodi architecto.</p>
+            <div class="flex justify-center hidden xl:flex">
+                <Boton text="Contacto"/> 
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <Image src={AboutUs} alt="Ingeniero cargando cables para una instalacion" class="max-w-[300px] max-h-[300px] sm:max-w-[400px] sm:max-h-[400px]"/>
+        </div>
+        <div class="visible xl:hidden">
+            <Boton text="Contacto"/> 
+        </div>
+    </article>
+</section>
