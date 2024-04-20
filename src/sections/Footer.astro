@@ -4,14 +4,16 @@ import { Image } from 'astro:assets'
 import Mapa from '../images/mapa.avif'
 ---
 
-<section class="bg-[#08121A] text-white flex flex-col items-center text-center gap-10 p-10 md:flex-row md:px-[10rem]">
+<section class="bg-[#08121A] text-white flex flex-col items-center justify-between text-center gap-10 p-10 md:flex-row md:px-[10rem]">
 <div>
     <Image src={Logo} alt='Logo' class="max-w-[186px] max-h-[61px] sm:max-w-[266px] sm:max-h-[88px]"/>
 </div>
-<div>
-    <h3 class="text-lg font-bold">
-        Lorem ipsum dolor sit, amet consectetur xss elit. Quam, veritatis accusamus. Odit, necessitatibus nulla? Itaque nostrum sunt possimus eum exercitationem blanditiis id dolorem in, doloribus distinctio magni vero debitis libero.
-    </h3>
+<div class="text-lg">
+    <p>Facebook: DMGC Sistemas</p>
+    <p>Telefono y Whatsapp: (312)-310-5385</p>
+    <p>Correo: dmgcmx@gmail.com</p>
+    <p>Dirección: <br> Prolongación Hidalgo #889 Local B, Villa de Alvarez, Colima, México</p>
+    <p>Horario: <br> Lunes a Viernes de 9:00 AM - 6:00 PM <br>Sabado 9:00 AM - 2:00 PM</p>
 </div>
 <div>
     <Image src={Mapa} alt='Mapa mostrando la ubicacion de nuestra matriz' class="max-w-[250px] max-h-[250px]"/>
